@@ -27,7 +27,7 @@ const useUserCrud = () => {
 
     //!DELETE
     const deleteUserById = id => {
-        const urlDelete = `${url}${id}/`
+        const urlDelete = `${url}/${id}/`
         axios.delete(urlDelete)
             .then(res => getAllUsers())
             .catch(err => console.log(err))
