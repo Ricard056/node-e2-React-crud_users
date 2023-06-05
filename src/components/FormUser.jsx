@@ -55,23 +55,23 @@ const FromUser = ({ createNewUser, updateInfo, updateUserById, setUpdateInfo, se
                     <i className='bx bx-arrow-back'></i></span>
                 <div className='form__item'>
                     <label className='form__label' htmlFor="email">Email: </label>
-                    <input className='form__input' {...register('email')} type="email" id="email" />
+                    <input className='form__input' {...register('email')} type="email" id="email" placeholder="Email..."/>
                 </div>
                 <div className='form__item'>
                     <label className='form__label' htmlFor="password">Password: </label>
-                    <input className='form__input' {...register('password')} type="password" id="password" />
+                    <input className='form__input' {...register('password')} type="password" id="password" placeholder="Password..."/>
                 </div>
                 <div className='form__item'>
                     <label className='form__label' htmlFor="first_name">First name: </label>
-                    <input className='form__input' {...register('first_name')} type="text" id="first_name" />
+                    <input className='form__input' {...register('first_name')} type="text" id="first_name" placeholder="Nombre..."/>
                 </div>
                 <div className='form__item'>
                     <label className='form__label' htmlFor="last_name">Last name: </label>
-                    <input className='form__input' {...register('last_name')} type="text" id="last_name" />
+                    <input className='form__input' {...register('last_name')} type="text" id="last_name" placeholder="Apellido..."/>
                 </div>
                 <div className='form__item'>
                     <label className='form__label' htmlFor="birthday">Birthday: </label>
-                    <input className='form__input' {...register('birthday')} type="text" id="birthday" />
+                    <input className='form__input' {...register('birthday')} type="text" id="birthday" placeholder="01-01-2001"/>
                 </div>
                 <button className='form__btn' onClick={handleExit}>{updateInfo ? 'Update' : 'Create'}</button>
             </form>
